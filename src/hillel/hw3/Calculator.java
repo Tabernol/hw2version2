@@ -38,12 +38,6 @@ public class Calculator {
         for (int i = indexOfOperation + 1; i < expression.length(); i++) {
             second = second.concat(String.valueOf(expression.charAt(i)));
         }
-        try {
-            Integer.parseInt(second);
-        } catch (NumberFormatException e) {
-            System.out.println("no correct input");
-            runCalculator();
-        }
         return Integer.parseInt(second);
     }
 
